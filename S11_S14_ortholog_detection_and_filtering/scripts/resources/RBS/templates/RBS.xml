@@ -1,0 +1,81 @@
+<beast version='2.0'      namespace='beast.app.beauti:beast.core:beast.evolution.branchratemodel:beast.evolution.speciation:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood:beast.evolution:beast.math.distributions'>
+
+<mergewith point='substModelTemplates'>
+<!-- Reversible-jump Based substitution model -->
+        <subtemplate id='RB' class='beast.evolution.substitutionmodel.RB' mainid='RB.s:$(n)'
+		suppressInputs='beast.evolution.substitutionmodel.RB.eigenSystem,
+						beast.evolution.substitutionmodel.RB.count,
+						beast.evolution.substitutionmodel.RB.rates,
+						beast.evolution.substitutionmodel.RB.frequencies'>
+<![CDATA[
+    <substModel spec='RB' id='RB.s:$(n)'> 
+        <count spec='parameter.IntegerParameter' id='RBcount.s:$(n)' value='5' lower='0' upper='5'/>
+        <rates spec='parameter.RealParameter' id='RBrates.s:$(n)' value='1' dimension='5' lower='0.01' upper='100.0'/>
+        <frequencies id='freqs.s:$(n)' spec='Frequencies'>
+            <data idref='$(n)'/>
+        </frequencies>
+    </substModel>
+
+    <distribution id='RBprior.s:$(n)' spec='beast.math.distributions.RBPrior' count='@RBcount.s:$(n)' x='@RBrates.s:$(n)'>
+        <distr spec="beast.math.distributions.Gamma" alpha='0.2' beta='5.0'/>
+    </distribution>
+
+    <operator id='RBOperator.s:$(n)' spec='RBOperator' weight="1" rates="@RBrates.s:$(n)" count='@RBcount.s:$(n)'/>
+    <operator id='RBratescaler.s:$(n)' spec='RBScaleOperator' scaleFactor="0.5" weight="1" parameter="@RBrates.s:$(n)" count='@RBcount.s:$(n)'/>
+
+]]>
+
+            <connect srcID='RBcount.s:$(n)'             targetID='state' inputName='stateNode' if='inlikelihood(RBcount.s:$(n))'/>
+            <connect srcID='RBrates.s:$(n)'             targetID='state' inputName='stateNode' if='inlikelihood(RBrates.s:$(n))'/>
+
+            <connect srcID='RBOperator.s:$(n)'          targetID='mcmc' inputName='operator' if='inlikelihood(RBcount.s:$(n)) and inlikelihood(RBrates.s:$(n)) '>Reversible jump operator for dimension of RB of partition s:$(n)</connect>
+            <connect srcID='RBratescaler.s:$(n)'        targetID='mcmc' inputName='operator' if='inlikelihood(RBrates.s:$(n))'>Scale RB rate parameter of partition s:$(n)</connect>
+
+            <connect srcID='RBcount.s:$(n)'             targetID='tracelog' inputName='log'  if='inlikelihood(RBcount.s:$(n))'/>
+            <connect srcID='RBrates.s:$(n)'             targetID='tracelog' inputName='log'  if='inlikelihood(RBrates.s:$(n))'/>
+
+            <connect srcID='RBprior.s:$(n)'             targetID='prior' inputName='distribution' if='inlikelihood(RB.s:$(n))'>RB rate parameter of partition s:$(n)</connect>
+        </subtemplate>
+
+
+<!-- Variable Selection substitution model -->
+<!--
+        <subtemplate id='VS' class='beast.evolution.substitutionmodel.RB' mainid='VS.s:$(n)'
+		suppressInputs='beast.evolution.substitutionmodel.RB.eigenSystem,
+						beast.evolution.substitutionmodel.RB.count,
+						beast.evolution.substitutionmodel.RB.rates,
+						beast.evolution.substitutionmodel.VS.frequencies'>
+<![CDATA[
+    <substModel spec='RB' id='VS.s:$(n)'> 
+        <count spec='parameter.IntegerParameter' id='VScount.s:$(n)' value='5' lower='0' upper='5'/>
+        <rates spec='parameter.RealParameter' id='VSrates.s:$(n)' value='1' dimension='5' lower='0.01' upper='100.0'/>
+        <frequencies id='freqs.s:$(n)' spec='Frequencies'>
+            <data idref='$(n)'/>
+        </frequencies>
+    </substModel>
+
+    <distribution id='VSprior.s:$(n)' spec='beast.math.distributions.Prior' x='@VSrates.s:$(n)'>
+        <distr spec="beast.math.distributions.Gamma" alpha='0.2' beta='5.0'/>
+    </distribution>
+
+    <operator id='VSOperator.s:$(n)' spec='IntRandomWalkOperator' weight="9" windowSize='1' parameter='@VScount.s:$(n)'/>
+    <operator id='VSratescaler.s:$(n)' spec='ScaleOperator' scaleFactor="0.5" weight="9" parameter="@VSrates.s:$(n)"/>
+
+]]>
+
+            <connect srcID='VScount.s:$(n)'             targetID='state' inputName='stateNode' if='inlikelihood(VScount.s:$(n))'/>
+            <connect srcID='VSrates.s:$(n)'             targetID='state' inputName='stateNode' if='inlikelihood(VSrates.s:$(n))'/>
+
+            <connect srcID='VSOperator.s:$(n)'          targetID='mcmc' inputName='operator' if='inlikelihood(VScount.s:$(n)) and inlikelihood(VSrates.s:$(n)) '>Variable selection operator for dimension of VS of partition s:$(n)</connect>
+            <connect srcID='VSratescaler.s:$(n)'        targetID='mcmc' inputName='operator' if='inlikelihood(VSrates.s:$(n))'>Scale VS rate parameter of partition s:$(n)</connect>
+
+            <connect srcID='VScount.s:$(n)'             targetID='tracelog' inputName='log'  if='inlikelihood(VScount.s:$(n))'/>
+            <connect srcID='VSrates.s:$(n)'             targetID='tracelog' inputName='log'  if='inlikelihood(VSrates.s:$(n))'/>
+
+            <connect srcID='VSprior.s:$(n)'             targetID='prior' inputName='distribution' if='inlikelihood(VS.s:$(n))'>VS rate parameter of partition s:$(n)</connect>
+        </subtemplate>
+
+-->
+</mergewith>
+</beast>
+

@@ -1,0 +1,521 @@
+# Nomenclature follows Betancur-R. et al. (2013), except for families there grouped as
+# Berycimorphaceae, a clade which we recover as non-monophyletic. Here, classification of
+# "berycimorph" families follows Nelson (2006), which is compatible with relationships 
+# supported by our data set.
+# Species numbers are taken from Catalog of Fishes (COF), available at
+# http://researcharchive.calacademy.org/research/ichthyology/catalog/SpeciesByFamily.asp,
+# and accessed on July 1, 2015.
+# Differences in clade names between Betancur-R. et al. (2013) and COF are indicated in
+# parentheses. Sampled families are marked with asterisks (*).
+
+Otomorpha
+	Denticipitidae	1
+	Clupeidae	194
+	Dussumieriidae	9
+	Engraulidae	148
+	Chirocentridae	2
+	Pristigasteridae	38
+	Sundasalangidae	7
+	Alepocephalidae	96
+	Platytroctidae	40
+	Leptochilichthyidae	3
+	Gonorynchidae	5
+	Phractolaemidae	1
+	Chanidae	1
+	Kneriidae	30
+	Botiidae (Botiinae)	56
+	Catostomidae	83
+	Cobitidae (Cobitinae)	192
+	Cyprinidae*	2991
+	Gyrinocheilidae	3
+	Nemacheilidae	644
+	Balitoridae	231
+	Barbuccidae	2
+	Ellopostomatidae	2
+	Psilorhynchidae	26
+	Serpenticobitidae	3
+	Vaillantellidae	3
+	Gymnotidae	40
+	Apteronotidae	94
+	Rhamphichthyidae	16
+	Sternopygidae	35
+	Hypopomidae	30
+	Citharinidae	8
+	Distichodontidae	101
+	Acestrorhynchidae	26
+	Alestidae	115
+	Bryconidae	49
+	Chalceidae	5
+	Characidae*	1088
+	Chilodontidae	8
+	Crenuchidae	88
+	Ctenoluciidae	7
+	Cynodontidae	8
+	Erythrinidae	16
+	Gasteropelecidae	9
+	Hemiodontidae	31
+	Hepsetidae	5
+	Lebiasinidae	75
+	Parodontidae	32
+	Prochilodontidae	21
+	Serrasalmidae	88
+	Triportheidae	21
+	Anostomidae	147
+	Curimatidae	105
+	Iguanodectidae	30
+	Astroblepidae	71
+	Callichthyidae	204
+	Loricariidae	906
+	Nematogenyidae	1
+	Trichomycteridae	283
+	Diplomystidae	6
+	Akysidae	57
+	Amblycipitidae	36
+	Amphiliidae	94
+	Anchariidae	6
+	Ariidae	145
+	Auchenipteridae	117
+	Bagridae	205
+	Cetopsidae	42
+	Chacidae	4
+	Clariidae	120
+	Claroteidae	92
+	Cranoglanididae	3
+	Doradidae	93
+	Heptapteridae	208
+	Heteropneustidae	4
+	Horabagridae	9
+	Ictaluridae	51
+	Malapteruridae	19
+	Mochokidae	209
+	Pangasiidae	28
+	Pimelodidae	109
+	Plotosidae	41
+	Pseudopimelodidae	40
+	Schilbeidae	61
+	Siluridae	99
+	Sisoridae	217
+	Aspredinidae	40
+	Austroglanididae	3
+	Erethistidae	44
+	Lacantuniidae	1
+	Olyridae	5
+	Scoloplacidae	6
+
+Lepidogalaxiiformes
+	Lepidogalaxiidae	1
+
+Protacanthopterygii
+	Galaxiidae	65
+	Argentinidae	28
+	Bathylagidae	24
+	Microstomatidae	21
+	Opisthoproctidae	19
+	Salmonidae*	223
+	Esocidae	7
+	Umbridae	7
+
+Osmeriformes
+	Osmeridae*	14
+	Plecoglossidae	1
+	Retropinnidae	6
+	Salangidae	18
+
+Stomiatiformes
+	Diplophidae (omitted in COF, species number from Nelson 2006) 8
+	Gonostomatidae	33
+	Phosichthyidae	24
+	Sternoptychidae	76
+	Stomiidae*	301
+
+Aulopiformes
+	Aulopidae	12
+	Pseudotrichonotidae	2
+	Synodontidae	74
+	Paraulopidae	14
+	Alepisauridae	2
+	Bathysauridae	2
+	Chlorophthalmidae*	20
+	Evermannellidae	8
+	Giganturidae	2
+	Ipnopidae	33
+	Notosudidae	17
+	Paralepididae	59
+	Scopelarchidae	18
+	Bathysauroididae	1
+
+Ateleopodiformes
+	Ateleopodidae*	13
+
+Myctophiformes
+	Myctophidae*	251
+	Neoscopelidae	6
+
+Polymixiiformes
+	Polymixiidae*	10
+
+Percopsiformes
+	Amblyopsidae*	9
+	Aphredoderidae	1
+	Percopsidae*	2
+
+Zeiformes
+	Parazenidae	4
+	Zeidae*	6
+	Cyttidae	3
+	Grammicolepididae	3
+	Oreosomatidae	10
+	Zenionidae (Zeniontidae)	7
+
+Stylephoriformes
+	Stylephoridae*	1
+
+Bregmacerotidae
+	Bregmacerotidae*	14
+
+Muraenolepididae
+	Muraenolepididae*	8
+
+Euclichthyidae
+	Euclichthyidae	1
+
+Bathygadinae
+	Bathygadinae*	27
+
+Macrouroidinae
+	Macrouroidinae	2
+
+Trachyrincinae
+	Trachyrincinae*	7
+
+Macrourinae
+	Macrourinae*	371
+
+Moridae
+	Moridae*	107
+
+Melanonidae
+	Melanonidae*	2
+
+Gadinae
+	Gadinae* (Gadidae)	23
+
+Lotinae
+	Lotinae* (Lotidae)	22
+
+Phycinae
+	Phycinae* (Phycidae)	11
+
+Merlucciidae
+	Merlucciidae*	21
+
+Lampridiformes
+	Lamprididae (Lampridae)*	2
+	Lophotidae	5
+	Regalecidae*	3
+	Trachipteridae	11
+	Radiicephalidae	1
+	Veliferidae	2
+
+Trachichthyoidei
+	Anoplogastridae	2
+	Diretmidae	4
+	Anomalopidae	9
+	Monocentridae*	4
+	Trachichthyidae	48
+
+Holocentriformes
+	Holocentridae*	85
+
+Berycoidei
+	Berycidae*	10
+
+Cetomimoidea
+	Gibberichthyidae	2
+	Rondeletiidae*	2
+	Barbourisiidae	1
+	Cetomimidae	30
+
+Stephanoberycoidea
+	Melamphaidae	63
+	Stephanoberycidae*	4
+	Hispidoberycidae	1
+
+Ophidiiformes
+	Ophidiidae*	264
+	Carapidae*	35
+	Bythitidae	209
+	Aphyonidae	24
+	Parabrotulidae	3
+
+Batrachoidiformes
+	Batrachoididae*	84
+
+Scombriformes
+	Ariommatidae	8
+	Bramidae	20
+	Caristiidae	19
+	Centrolophidae	31
+	Chiasmodontidae	32
+	Gempylidae	26
+	Icosteidae	1
+	Nomeidae	17
+	Pomatomidae	1
+	Scombridae*	53
+	Scombrolabracidae	1
+	Stromateidae	17
+	Trichiuridae	47
+	Amarsipidae	1
+	Scombropidae	3
+	Tetragonuridae	3
+	Arripidae	4
+
+Gobiomorpharia
+	Kurtidae	2
+	Apogonidae	355
+	Odontobutidae	23
+	Eleotridae	172
+	Gobiidae*	1760
+	Microdesmidae	89
+	Kraemeriidae	8
+	Rhyacichthyidae	3
+	Schindleriidae	3
+	Thalasseleotrididae	3
+	Xenisthmidae	14
+
+Percomorpharia
+	Acropomatidae	32
+	Caesionidae	23
+	Caproidae	18
+	Centrogenyidae	1
+	Chaetodontidae	132
+	Emmelichthyidae	18
+	Enoplosidae	1
+	Epigonidae	43
+	Gerreidae	55
+	Haemulidae	132
+	Howellidae	9
+	Kuhliidae	12
+	Kyphosidae	52
+	Lateolabracidae	3
+	Leiognathidae	50
+	Lobotidae	2
+	Lutjanidae	109
+	Malacanthidae	45
+	Monodactylidae	6
+	Moronidae	6
+	Oplegnathidae	7
+	Percichthyidae	37
+	Polyprionidae	4
+	Pomacanthidae	88
+	Priacanthidae	19
+	Scatophagidae	4
+	Sciaenidae	292
+	Siganidae	31
+	Sillaginidae	34
+	Terapontidae	53
+	Datnioididae	5
+	Callanthiidae	14
+	Cepolidae	25
+	Dinolestidae	1
+	Dinopercidae	2
+	Ostracoberycidae	3
+	Pentacerotidae	13
+	Ammodytidae	33
+	Pinguipedidae	87
+	Uranoscopidae	53
+	Cheimarrichthyidae	1
+	Labridae*	527
+	Odacidae	12
+	Scaridae	99
+	Drepaneidae	3
+	Ephippidae	15
+	Lethrinidae	43
+	Sparidae*	143
+	Nemipteridae	69
+	Centracanthidae	9
+	Lophiidae	29
+	Antennariidae*	51
+	Brachionichthyidae	14
+	Lophichthyidae	1
+	Tetrabrachiidae	2
+	Chaunacidae	23
+	Ogcocephalidae	75
+	Ceratiidae	4
+	Gigantactinidae	23
+	Himantolophidae	22
+	Melanocetidae	6
+	Oneirodidae	67
+	Caulophrynidae	5
+	Centrophrynidae	1
+	Diceratiidae	6
+	Linophrynidae	27
+	Neoceratiidae	1
+	Thaumatichthyidae	8
+	Triacanthodidae	23
+	Diodontidae	8
+	Tetraodontidae*	187
+	Molidae	4
+	Balistidae	42
+	Monacanthidae	110
+	Aracanidae	13
+	Ostraciidae	27
+	Triacanthidae	7
+	Triodontidae	1
+	Acanthuridae	84
+	Luvaridae	1
+	Zanclidae	1
+	Glaucosomatidae	4
+	Pempheridae	39
+	Cheilodactylidae	27
+	Cirrhitidae	35
+	Aplodactylidae	5
+	Chironemidae	6
+	Latridae	7
+	Centrarchidae	38
+	Elassomatidae	7
+	Platycephalidae	85
+	Percophidae	51
+	Apistidae	3
+	Aploactinidae	49
+	Bembridae	9
+	Champsodontidae	13
+	Congiopodidae	7
+	Eschmeyeridae	1
+	Gnathanacanthidae	1
+	Hoplichthyidae	17
+	Neosebastidae	18
+	Pataecidae	3
+	Perryenidae	1
+	Plectrogeniidae	2
+	Serranidae	546
+	Percidae*	235
+	Trachinidae	9
+	Pseudaphritidae	1
+	Eleginopsidae	1
+	Nototheniidae	59
+	Artedidraconidae	36
+	Harpagiferidae	12
+	Bathydraconidae	17
+	Channichthyidae*	26
+	Bovichtidae	11
+	Scorpaenidae	226
+	Sebastidae*	133
+	Setarchidae	6
+	Synanceiidae	35
+	Tetrarogidae	40
+	Triglidae	126
+	Peristediidae	45
+	Trichodontidae	2
+	Anoplopomatidae	2
+	Aulorhynchidae	1
+	Gasterosteidae*	19
+	Hypoptychidae	2
+	Anarhichadidae	5
+	Bathymasteridae	7
+	Cryptacanthodidae	4
+	Stichaeidae	70
+	Pholidae	16
+	Zaproridae	1
+	Zoarcidae	304
+	Ptilichthyidae	1
+	Scytalinidae	1
+	Agonidae	46
+	Cyclopteridae	28
+	Cottidae*	265
+	Hexagrammidae	12
+	Liparidae	422
+	Psychrolutidae	38
+	Abyssocottidae	24
+	Bathylutichthyidae	2
+	Comephoridae	2
+	Ereuniidae	3
+	Hemitripteridae	8
+	Normanichthyidae	1
+	Parabembridae	2
+	Rhamphocottidae	1
+
+Ovalentariae
+	Ambassidae	50
+	Embiotocidae	23
+	Grammatidae	13
+	Plesiopidae	50
+	Polycentridae	5
+	Pomacentridae*	396
+	Pseudochromidae*	152
+	Cichlidae*	1679
+	Pholidichthyidae	2
+	Atherinidae	74
+	Atherinopsidae	109
+	Bedotiidae	16
+	Isonidae	5
+	Melanotaeniidae	95
+	Pseudomugilidae	18
+	Telmatherinidae	18
+	Dentatherinidae	1
+	Notocheiridae	1
+	Phallostethidae	23
+	Adrianichthyidae*	37
+	Belonidae	40
+	Exocoetidae	66
+	Hemiramphidae	61
+	Scomberesocidae	5
+	Zenarchopteridae	61
+	Aplocheilidae	14
+	Cyprinodontidae	134
+	Fundulidae	41
+	Poeciliidae*	359
+	Anablepidae	18
+	Goodeidae	48
+	Nothobranchiidae	274
+	Profundulidae	8
+	Rivulidae	413
+	Valenciidae	3
+	Mugilidae	74
+	Opistognathidae	82
+	Gobiesocidae	165
+	Blenniidae*	405
+	Chaenopsidae	90
+	Clinidae	87
+	Dactyloscopidae	48
+	Labrisomidae	128
+	Tripterygiidae	176
+
+Anabantomorphariae
+	Indostomidae	3
+	Synbranchidae	24
+	Mastacembelidae	85
+	Chaudhuriidae	10
+	Anabantidae*	31
+	Helostomatidae*	1
+	Osphronemidae	130
+	Badidae	24
+	Pristolepididae	6
+	Channidae	35
+	Nandidae	6
+
+Carangimorphariae
+	Centropomidae	12
+	Leptobramidae	1
+	Menidae	1
+	Polynemidae	42
+	Sphyraenidae	26
+	Toxotidae	8
+	Istiophoridae	9
+	Xiphiidae	1
+	Carangidae*	151
+	Coryphaenidae	2
+	Echeneidae	8
+	Nematistiidae	1
+	Rachycentridae	1
+	Psettodidae	3
+	Achiridae	36
+	Achiropsettidae	4
+	Bothidae	169
+	Citharidae	6
+	Cynoglossidae	145
+	Paralichthyidae	109
+	Pleuronectidae	105
+	Samaridae	28
+	Scophthalmidae	9
+	Soleidae	179

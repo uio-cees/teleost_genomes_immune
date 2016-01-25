@@ -1,0 +1,271 @@
+test
+bd.shifts.plot(list(res),1,2.1,0,5)
+lines(c(-max(x),-time[2]),c((lambda-mu)[2],(lambda-mu)[2]),col="red")
+lines(c(-time[2],0),c((lambda-mu)[1],(lambda-mu)[1]),col="red")
+bd.shifts.plot(list(res),1,2.1,0,5)
+lines(c(-time[2],0),c((lambda-mu)[1],(lambda-mu)[1]),col="red")
+lines(c(-max(x),-time[2]),c((lambda-mu)[2],(lambda-mu)[2]),col="red")
+set.seed(1)
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=FALSE)
+tree
+plot(tree[[1]])
+?sim.rateshift.taxa
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=FALSE)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+set.seed(1)
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+set.seed(1)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=T)
+plot(tree[[1]])
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=FALSE)
+set.seed(1)
+tree<-sim.rateshift.taxa(10,1,c(2,0.1),c(0,0.05),frac=c(1,1),times=time,complete=FALSE)
+x<-sort(getx(tree[[1]]),decreasing=TRUE)
+resDD<-bd.densdep.optim(x,discrete=FALSE,continuous=TRUE)[[2]]
+?bd.densdep.optim
+resDD
+plot(tree[[1]])
+x
+resShifts <- bd.shifts.optim(x,c(rho,1),0.1,0.1,2.1)[[2]][[2]]]
+resShifts <- bd.shifts.optim(x,c(rho,1),0.1,0.1,2.1)[[2]][[2]]
+resDD
+resShifts
+?bd.densdep.optim
+AICDD <- 2*3+2*resDD$value
+AICShifts <- 2*5+2*resShifts[1]
+AICDD
+AICShifts
+data(bird.orders)
+plot(bird.orders)
+S <- c(10, 47, 69, 214, 161, 17, 355, 51, 56, 10, 39, 152, 6, 143, #
+358, 103, 319, 23, 291, 313, 196, 1027, 5712)
+cbind(bird.orders$tip.label,S)
+groupscut<-get.groups(bird.orders,S,96.43) #all orders established at 96.43 Ma
+bird.orders
+class(bird.orders)
+plot(bird.orders)
+bird.orders
+summary(bird.orders)
+describe(bird.orders)
+groupscut<-get.groups(bird.orders,S,96.43) #all orders established at 96.43 Ma
+x<-branching.times(bird.orders)
+x
+x<-x/0.207407
+x
+resbirds<-bd.shifts.optim(x,sampling=c(1,1),grid=1,start=96,end=135,survival=1,groups=groupscut)[[2]]
+i<-1
+test<-pchisq(2*(res[[i]][1]-res[[i+1]][1]),3)
+test
+resbirds
+resbirdsWrongSamp<-bd.shifts.optim(x,sampling=c(length(S)/sum(S),1),grid=1,start=96,end=135,survival=1,groups=0)[[2]]
+resbirdsCompleteSamp<-bd.shifts.optim(x,sampling=c(1,1),grid=1,start=96,end=135,survival=1,groups=0)[[2]]
+resbirds
+resbirdsWrongSamp
+resbirdsCompleteSamp
+require(akima) ; require(rgl)
+import.packages("rgl",dependencies=T)
+import.package("rgl",dependencies=T)
+install.packages("rgl",dependencies=T)
+require(akima) ; require(rgl)
+install.packages("akima",dependencies=T)
+require(akima) ; require(rgl)
+x=runif(1000)
+y=runif(1000)
+z=rnorm(1000)
+s=interp(x,y,z)
+dim(s$z)
+surface3d(s$x,s$y,s$z)
+library(rgdal)
+install.packages("rgdal",dependencies=T)
+library(raster)
+install.packages("raster",dependencies=T)
+r <- raster(system.file("external/test.ag", package="sp")[1])
+library(rgdal)
+library(raster)
+library(rgl)
+r <- raster(system.file("external/test.ag", package="sp")[1])
+persp(r)
+sgdf <- as(r, "SpatialGridDataFrame")
+x <- as.image.SpatialGridDataFrame(sgdf)
+surface3d(x$x, x$y, x$z)
+r
+persp(r)
+?persp
+z <- 2 * volcano        # Exaggerate the relief#
+x <- 10 * (1:nrow(z))   # 10 meter spacing (S to N)#
+y <- 10 * (1:ncol(z))   # 10 meter spacing (E to W)#
+## Don't draw the grid lines :  border = NA#
+par(bg = "slategray")#
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = FALSE)
+x
+xy
+y
+table <- read.table("~/Downloads/DHM25_200m200710/DHM200.xyz")
+table
+sum(table)
+summary(table)
+x <- table$V1
+x
+y <- table$V2
+z <- table$V3
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = FALSE)
+x[0:10]
+y[0:10]
+z <- 2 * volcano
+z
+summary(table)
+?persp
+z <- 2 * volcano
+x <- 10 * (1:nrow(z))
+y <- 10 * (1:ncol(z))
+par(bg = "slategray")
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = FALSE)
+persp(x, y, z, theta = 90, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = FALSE)
+persp(x, y, z, theta = 90, phi = 30, col = "red", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = FALSE)
+persp(x, y, z, theta = 0, phi = 30, col = "red", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = FALSE)
+z
+summary(z)
+stat(z)
+stats(z)
+class(z)
+describe(z)
+?z
+table <- read.table("~/Desktop/25 Gipfel/3D Modelle/Aargau.mat")
+table
+class(table)
+matrix <- as.matrix(table)
+matrix
+z <- matrix
+x <- 10 * (1:nrow(z))
+y <- 10 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = FALSE)
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = T)
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = T, xlim=c(0,1000))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,1000))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000), zlab = "Höhe")
+)
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000), zlab = "H")
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
+      ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE,#
++       ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000), zlab="Höhe")
+x <- 100 * (1:nrow(z))
+y <- 10 * (1:ncol(z))
+y <- 100 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000), zlab="Höhe")
+table <- read.table("~/Desktop/25 Gipfel/3D Modelle/Bern.mat")
+matrix <- as.matrix(table)
+z <- matrix
+x <- 100 * (1:nrow(z))
+y <- 100 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000), zlab="Höhe")
+table <- read.table("~/Desktop/25 Gipfel/3D Modelle/Bern.mat")
+z <- as.matrix(table)
+y <- 10 * (1:ncol(z))
+x <- 10 * (1:nrow(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,2000), zlab="Höhe")
+z
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+x <- 100 * (1:nrow(z))
+y <- 100 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+table <- read.table("~/Desktop/25 Gipfel/3D Modelle/Bern.mat")
+z
+z <- as.matrix(table)
+x <- 100 * (1:nrow(z))
+y <- 100 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+table <- read.table("~/Desktop/25 Gipfel/3D Modelle/Bern.mat")
+z <- as.matrix(table)
+y <- 10 * (1:ncol(z))
+x <- 10 * (1:nrow(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+x <- 100 * (1:nrow(z))
+y <- 100 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+table <- read.table("~/Desktop/25 Gipfel/3D Modelle/Bern.mat")
+z <- as.matrix(table)
+x <- 20 * (1:nrow(z))
+y <- 20 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+x <- 100 * (1:nrow(z))
+y <- 100 * (1:ncol(z))
+persp(x, y, z, theta = 135, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 45, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 30, col = "green3", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 30, col = "grey", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 30, col = "acc8dd", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 30, col = "#acc8dd", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 20, col = "#acc8dd", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 45, col = "#acc8dd", scale = FALSE, ltheta = -120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 45, col = "#acc8dd", scale = FALSE, ltheta = 120, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 45, col = "#acc8dd", scale = FALSE, ltheta = 0, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 45, col = "#acc8dd", scale = FALSE, ltheta = 0, shade = 0.5, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 45, col = "#acc8dd", scale = FALSE, ltheta = 0, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+table <- read.table("~/Desktop/25 Gipfel/3D Modelle/Genf.mat")
+z <- as.matrix(table)
+persp(x, y, z, theta = 90, phi = 45, col = "#acc8dd", scale = FALSE, ltheta = 0, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 45, col = "white", scale = FALSE, ltheta = 0, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+persp(x, y, z, theta = 90, phi = 45, col = "#acc8dd", scale = FALSE, ltheta = 0, shade = 0.75, border = NA, box = T, zlim=c(0,4500), zlab="Höhe")
+setwd("~/Documents/Positions/University of Oslo 2013/Projects/Origin of alternative immune system (Martin)/Teleost phylogenomics/ortholog identification/scripts")
+table <- read.table("tmp.txt")
+table
+hist(table$V2)
+hist(table$V4)
+hist(table$V6)
+hist(table$V3)
+hist(table$V5)
+hist(table$V3)
+hist(table$V5)
+hist(table$V7)
+hist(table$V3)
+hist(table$V5)
+hist(table$V3)
+hist(table$V3)
+hist(table$V5)
+hist(table$V7)
+table <- read.table("tmp.txt")
+hist(table$V7)
+table
+hist(table$V2)
+hist(table$V4)
+hist(table$V3)
+hist(table$V5)
+table <- read.table("tmp.txt")
+hist(table$V3)
+hist(table$V5)

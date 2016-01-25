@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" version="2.0">
+
+
+    <data dataType="nucleotide" id="alignment" name="alignment" strip="false">
+                    <sequence id="Sequence.0" taxon="human" totalcount="4" value="            AGAAATATGTCTGATAAAAGAGTTACTTTGATAGAGTAAATAATAGGAGCTTAAACCCCCTTATTTCTACTAGGACTATGAGAATCGAACCCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTATACCCTTCCCGTACTAAGAAATTTAGGTTAAATACAGACCAAGAGCCTTCAAAGCCCTCAGTAAGTTG-CAATACTTAATTTCTGTAAGGACTGCAAAACCCCACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGACCAATGGGACTTAAACCCACAAACACTTAGTTAACAGCTAAGCACCCTAATCAAC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTCGAATTTGCAATTCAATATGAAAA-TCACCTCGGAGCTTGGTAAAAAGAGGCCTAACCCCTGTCTTTAGATTTACAGTCCAATGCTTCA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCCAAAGCTGGTTTCAAGCCAACCCCATGGCCTCCATGACTTTTTCAAAAGGTATTAGAAAAACCATTTCATAACTTTGTCAAAGTTAAATTATAGGCT-AAATCCTATATATCTTA-CACTGTAAAGCTAACTTAGCATTAACCTTTTAAGTTAAAGATTAAGAGAACCAACACCTCTTTACAGTGA        "/>
+                    <sequence id="Sequence.01" taxon="chimp" totalcount="4" value="            AGAAATATGTCTGATAAAAGAATTACTTTGATAGAGTAAATAATAGGAGTTCAAATCCCCTTATTTCTACTAGGACTATAAGAATCGAACTCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTACACCCTTCCCGTACTAAGAAATTTAGGTTAAGCACAGACCAAGAGCCTTCAAAGCCCTCAGCAAGTTA-CAATACTTAATTTCTGTAAGGACTGCAAAACCCCACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATTAATGGGACTTAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAATCAAC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTCGAATTTGCAATTCAATATGAAAA-TCACCTCAGAGCTTGGTAAAAAGAGGCTTAACCCCTGTCTTTAGATTTACAGTCCAATGCTTCA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCTAAAGCTGGTTTCAAGCCAACCCCATGACCTCCATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAAGTTAAATTACAGGTT-AACCCCCGTATATCTTA-CACTGTAAAGCTAACCTAGCATTAACCTTTTAAGTTAAAGATTAAGAGGACCGACACCTCTTTACAGTGA        "/>
+                    <sequence id="Sequence.02" taxon="bonobo" totalcount="4" value="            AGAAATATGTCTGATAAAAGAATTACTTTGATAGAGTAAATAATAGGAGTTTAAATCCCCTTATTTCTACTAGGACTATGAGAGTCGAACCCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTATACCCTTCCCGTACTAAGAAATTTAGGTTAAACACAGACCAAGAGCCTTCAAAGCTCTCAGTAAGTTA-CAATACTTAATTTCTGTAAGGACTGCAAAACCCCACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATTAATGGGACTTAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAATCAGC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTTGAATTTGCAATTCAATATGAAAA-TCACCTCAGAGCTTGGTAAAAAGAGGCTTAACCCCTGTCTTTAGATTTACAGTCCAATGCTTCA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCTAAAGCTGGTTTCAAGCCAACCCCATGACCCCCATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAAGTTAAATTACAGGTT-AAACCCCGTATATCTTA-CACTGTAAAGCTAACCTAGCATTAACCTTTTAAGTTAAAGATTAAGAGGACCAACACCTCTTTACAGTGA        "/>
+                    <sequence id="Sequence.03" taxon="gorilla" totalcount="4" value="            AGAAATATGTCTGATAAAAGAGTTACTTTGATAGAGTAAATAATAGAGGTTTAAACCCCCTTATTTCTACTAGGACTATGAGAATTGAACCCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTGTCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTCACATCCTTCCCGTACTAAGAAATTTAGGTTAAACATAGACCAAGAGCCTTCAAAGCCCTTAGTAAGTTA-CAACACTTAATTTCTGTAAGGACTGCAAAACCCTACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATCAATGGGACTCAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAGTCAAC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTCGAATTTGCAATTCAATATGAAAT-TCACCTCGGAGCTTGGTAAAAAGAGGCCCAGCCTCTGTCTTTAGATTTACAGTCCAATGCCTTA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCCAAAGCTGGTTTCAAGCCAACCCCATGACCTTCATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAGGTTAAATTACGGGTT-AAACCCCGTATATCTTA-CACTGTAAAGCTAACCTAGCGTTAACCTTTTAAGTTAAAGATTAAGAGTATCGGCACCTCTTTGCAGTGA        "/>
+                    <sequence id="Sequence.04" taxon="orangutan" totalcount="4" value="            AGAAATATGTCTGACAAAAGAGTTACTTTGATAGAGTAAAAAATAGAGGTCTAAATCCCCTTATTTCTACTAGGACTATGGGAATTGAACCCACCCCTGAGAATCCAAAATTCTCCGTGCCACCCATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTACACCCTTCCCGTACTAAGAAATTTAGGTTA--CACAGACCAAGAGCCTTCAAAGCCCTCAGCAAGTCA-CAGCACTTAATTTCTGTAAGGACTGCAAAACCCCACTTTGCATCAACTGAGCGCAAATCAGCCACTTTAATTAAGCTAAGCCCTCCTAGACCGATGGGACTTAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAGTCAAT-TGGCTTCAGTCCAAAGCCCCGGCAGGCCTTAAAGCTGCTCCTTCGAATTTGCAATTCAACATGACAA-TCACCTCAGGGCTTGGTAAAAAGAGGTCTGACCCCTGTTCTTAGATTTACAGCCTAATGCCTTAACTCGGCCATTTTACCGCAAAAAAGGAAGGAATCGAACCTCCTAAAGCTGGTTTCAAGCCAACCCCATAACCCCCATGACTTTTTCAAAAGGTACTAGAAAAACCATTTCGTAACTTTGTCAAAGTTAAATTACAGGTC-AGACCCTGTGTATCTTA-CATTGCAAAGCTAACCTAGCATTAACCTTTTAAGTTAAAGACTAAGAGAACCAGCCTCTCTTTGCAATGA        "/>
+                    <sequence id="Sequence.05" taxon="siamang" totalcount="4" value="            AGAAATACGTCTGACGAAAGAGTTACTTTGATAGAGTAAATAACAGGGGTTTAAATCCCCTTATTTCTACTAGAACCATAGGAGTCGAACCCATCCTTGAGAATCCAAAACTCTCCGTGCCACCCGTCGCACCCTGTTCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTATACCCTTCCCATACTAAGAAATTTAGGTTAAACACAGACCAAGAGCCTTCAAAGCCCTCAGTAAGTTAACAAAACTTAATTTCTGCAAGGGCTGCAAAACCCTACTTTGCATCAACCGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATCGATGGGACTTAAACCCATAAAAATTTAGTTAACAGCTAAACACCCTAAACAACCTGGCTTCAATCTAAAGCCCCGGCAGA-GTTGAAGCTGCTTCTTTGAACTTGCAATTCAACGTGAAAAATCACTTCGGAGCTTGGCAAAAAGAGGTTTCACCTCTGTCCTTAGATTTACAGTCTAATGCTTTA-CTCAGCCACTTTACCACAAAAAAGGAAGGAATCGAACCCTCTAAAACCGGTTTCAAGCCAGCCCCATAACCTTTATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAAGTTAAATCACAGGTCCAAACCCCGTATATCTTATCACTGTAGAGCTAGACCAGCATTAACCTTTTAAGTTAAAGACTAAGAGAACTACCGCCTCTTTACAGTGA        "/>
+                </data>
+
+
+    
+
+
+    <distribution id="posterior" spec="util.CompoundDistribution" useThreads="false">
+        <distribution id="prior" spec="util.CompoundDistribution" useThreads="false">
+            <distribution birthDiffRate="@birthRate.alignment" conditionalOnRoot="false" id="YuleModel.alignment" spec="beast.evolution.speciation.YuleModel" tree="@Tree.alignment"/>
+            <distribution id="YuleBirthRatePrior.alignment" spec="beast.math.distributions.Prior" x="@birthRate.alignment">
+                <distr id="Uniform.0" lower="0.0" offset="0.0" spec="beast.math.distributions.Uniform" upper="1.0"/>
+            </distribution>
+            <distribution count="@RBScount.alignment" id="RBSprior.alignment" spec="beast.math.distributions.RBPrior" x="@RBSrates.alignment">
+                <distr spec="beast.math.distributions.Gamma" alpha='0.2' beta='5.0'/>
+            </distribution>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="false">
+            <distribution data="@alignment" id="treeLikelihood.alignment" spec="TreeLikelihood" tree="@Tree.alignment" useAmbiguities="false">
+                <siteModel gammaCategoryCount="0" id="SiteModel.alignment" spec="SiteModel">
+                    <parameter dimension="1" estimate="false" id="mutationRate.alignment" minordimension="1" name="mutationRate" value="1.0"/>
+                    <parameter dimension="1" estimate="false" id="gammaShape.alignment" minordimension="1" name="shape" value="1.0"/>
+                    <parameter dimension="1" estimate="false" id="proportionInvariant.alignment" minordimension="1" name="proportionInvariant" value="0.0"/>
+                    <substModel count="@RBScount.alignment" eigenSystem="beast.evolution.substitutionmodel.DefaultEigenSystem" id="RBS.alignment" rates="@RBSrates.alignment" spec="RB">
+                        <frequencies data="@alignment" estimate="true" id="freqs.alignment" spec="Frequencies"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.alignment" spec="beast.evolution.branchratemodel.StrictClockModel">
+                    <parameter dimension="1" estimate="false" id="clockRate.alignment" minordimension="1" name="clock.rate" value="1.0"/>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+
+
+    
+<run chainLength="10000000" id="mcmc" preBurnin="0" sampleFromPrior="false" spec="MCMC" storeEvery="-1">
+    <state id="state" storeEvery="1000">
+        <tree estimate="true" id="Tree.alignment" name="stateNode">
+            <taxonset id="TaxonSet.alignment" spec="TaxonSet">
+                <data idref="alignment" name="alignment"/>
+            </taxonset>
+        </tree>
+        <stateNode dimension="1" estimate="true" id="RBScount.alignment" lower="0" minordimension="1" spec="parameter.IntegerParameter" upper="5" value="5"/>
+        <parameter dimension="5" estimate="true" id="RBSrates.alignment" lower="0.01" minordimension="1" name="stateNode" upper="100.0" value="1"/>
+        <parameter dimension="1" estimate="true" id="birthRate.alignment" minordimension="1" name="stateNode" value="1.0"/>
+    </state>
+
+    <distribution idref="posterior"/>
+
+    <operator degreesOfFreedom="1" id="YuleBirthRateScaler.alignment" optimise="true" parameter="@birthRate.alignment" rootOnly="false" scaleAll="false" scaleAllIndependently="false" scaleFactor="0.75" spec="ScaleOperator" weight="3.0"/>
+
+    <operator id="allTipDatesRandomWalker.alignment" spec="TipDatesRandomWalker" tree="@Tree.alignment" useGaussian="false" weight="0.0" windowSize="1.0"/>
+
+    <operator degreesOfFreedom="1" id="treeScaler.alignment" optimise="true" rootOnly="false" scaleAll="false" scaleAllIndependently="false" scaleFactor="0.5" spec="ScaleOperator" tree="@Tree.alignment" weight="1.0"/>
+
+    <operator id="UniformOperator.alignment" spec="Uniform" tree="@Tree.alignment" weight="10.0"/>
+
+    <operator gaussian="true" id="SubtreeSlide.alignment" optimise="true" size="1.0" spec="SubtreeSlide" tree="@Tree.alignment" weight="5.0"/>
+
+    <operator id="narrow.alignment" isNarrow="true" spec="Exchange" tree="@Tree.alignment" weight="1.0"/>
+
+    <operator id="wide.alignment" isNarrow="false" spec="Exchange" tree="@Tree.alignment" weight="1.0"/>
+
+    <operator id="WilsonBalding.alignment" spec="WilsonBalding" tree="@Tree.alignment" weight="1.0"/>
+
+    <operator count="@RBScount.alignment" id="RBSOperator.alignment" rates="@RBSrates.alignment" spec="RBOperator" weight="1.0"/>
+
+    <operator count="@RBScount.alignment" degreesOfFreedom="1" id="RBSrateScaler.alignment" optimise="true" parameter="@RBSrates.alignment" rootOnly="false" scaleAll="false" scaleAllIndependently="false" scaleFactor="0.5" spec="RBScaleOperator" weight="1.0"/>
+
+    <logger fileName="ape.$(seed).log" id="tracelog" logEvery="1000" mode="autodetect" model="@posterior">
+        <distribution idref="posterior" name="log"/>
+        <distribution idref="likelihood" name="log"/>
+        <distribution idref="prior" name="log"/>
+        <distribution idref="treeLikelihood.alignment" name="log"/>
+        <log id="TreeHeight.alignment" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.alignment"/>
+        <distribution idref="YuleModel.alignment" name="log"/>
+        <log idref="RBScount.alignment"/>
+        <parameter idref="RBSrates.alignment" name="log"/>
+        <parameter idref="birthRate.alignment" name="log"/>
+    </logger>
+
+    <logger id="screenlog" logEvery="1000" mode="autodetect">
+        <distribution idref="posterior" name="log"/>
+        <log arg="@posterior" id="ESS.0" spec="util.ESS"/>
+        <distribution idref="likelihood" name="log"/>
+        <distribution idref="prior" name="log"/>
+    </logger>
+
+    <logger fileName="ape.$(seed).trees" id="treelog.alignment" logEvery="1000" mode="tree">
+        <tree idref="Tree.alignment" name="log"/>
+    </logger>
+
+    <tree estimate="false" id="RandomTree.alignment" initial="@Tree.alignment" name="init" spec="beast.evolution.tree.RandomTree" taxa="@alignment">
+        <populationModel id="ConstantPopulation0.alignment" spec="ConstantPopulation">
+            <parameter dimension="1" estimate="true" id="randomPopSize.alignment" minordimension="1" name="popSize" value="1"/>
+        </populationModel>
+    </tree>
+
+    <operatorschedule autoOptimize="true" autoOptimizeDelay="10000" id="OperatorSchedule.0" spec="OperatorSchedule" transform="none"/>
+
+</run>
+
+
+
+<!-- DO NOT EDIT the following machine generated text, they are used in Beauti 
+
+<operator id='origOperator.alignment' spec='beast.evolution.operators.ScaleOperator' scaleFactor='0.75' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='3.0'>
+    <parameter id='orig_root.alignment' lower='0.0' upper='Infinity' value='1.' dimension='1' minordimension='1' estimate='true'/>
+
+</operator>
+
+<input id='R_0.alignment' spec='beast.math.statistic.RPNcalculator' expression='birthRate.alignment deathRate.alignment samplingRate.alignment + /'>
+    <parameter idref='birthRate.alignment'/>
+
+    <parameter id='deathRate.alignment' lower='0.0' upper='Infinity' value='0.02' dimension='1' minordimension='1' estimate='true'/>
+
+    <parameter id='samplingRate.alignment' lower='0.0' upper='Infinity' value='.007' dimension='1' minordimension='1' estimate='true'/>
+
+</input>
+
+<operator id='proportionInvariantScaler.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@proportionInvariant.alignment' scaleFactor='0.5' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='1.0'/>
+
+<distribution id='BirthDeathSky.alignment' spec='beast.evolution.speciation.BirthDeathSkylineModel' orig_root='@orig_root.alignment' birthRate='@birthRate.alignment' deathRate='@deathRate.alignment' samplingRate='@samplingRate.alignment' forceRateChange='true' tree='@Tree.alignment'>
+    <parameter id='intervalTimes.alignment' name='intervalTimes' value='0. 0.002 0.01' dimension='3' minordimension='1' estimate='true'/>
+
+    <input id='intervalNumber.alignment' spec='beast.core.parameter.IntegerParameter' name='intervalNumber' value='3' dimension='1' minordimension='1' estimate='false'/>
+
+</distribution>
+
+<operator id='gammaShapeScaler.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@gammaShape.alignment' scaleFactor='0.5' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='1.0'/>
+
+<operator id='StrictClockRateScaler.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@clockRate.alignment' scaleFactor='0.75' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='3.0'/>
+
+<distribution id='birthPrior.alignment' spec='beast.math.distributions.Prior' x='@birthRate.alignment'>
+    <input id='Gamma.0' spec='beast.math.distributions.Gamma' name='distr' offset='0.0'>
+        <parameter id='RealParameter.0' name='alpha' lower='0.0' upper='0.0' value='20' dimension='1' minordimension='1' estimate='true'/>
+        <parameter id='RealParameter.01' name='beta' lower='0.0' upper='0.0' value='2.' dimension='1' minordimension='1' estimate='true'/>
+    </input>
+
+</distribution>
+
+<distribution id='samplingPrior.alignment' spec='beast.math.distributions.Prior' x='@samplingRate.alignment'>
+    <input id='Gamma.01' spec='beast.math.distributions.Gamma' name='distr' offset='0.0'>
+        <parameter id='RealParameter.02' name='alpha' lower='0.0' upper='0.0' value='8' dimension='1' minordimension='1' estimate='true'/>
+        <parameter id='RealParameter.03' name='beta' lower='0.0' upper='0.0' value='2.' dimension='1' minordimension='1' estimate='true'/>
+    </input>
+
+</distribution>
+
+<distribution id='GammaShapePrior.alignment' spec='beast.math.distributions.Prior' x='@gammaShape.alignment'>
+    <input id='Uniform.01' spec='beast.math.distributions.Uniform' name='distr' lower='0.0' upper='1000.0' offset='0.0'/>
+
+</distribution>
+
+<distribution id='ClockPrior.alignment' spec='beast.math.distributions.Prior' x='@clockRate.alignment'>
+    <input id='OneOnX.01' spec='beast.math.distributions.OneOnX' name='distr' offset='0.0'/>
+
+</distribution>
+
+<operator id='samplingOperator.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@samplingRate.alignment' scaleFactor='0.75' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='3.0'/>
+
+<operator id='updownBD.alignment' spec='beast.evolution.operators.UpDownOperator' scaleFactor='0.75' optimise='true' weight='10.0'/>
+
+<operator id='intervalTimesOperator.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@intervalTimes.alignment' scaleFactor='0.75' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='1.0'/>
+
+<distribution id='deathPrior.alignment' spec='beast.math.distributions.Prior' x='@deathRate.alignment'>
+    <input id='Gamma.02' spec='beast.math.distributions.Gamma' name='distr' offset='0.0'>
+        <parameter id='RealParameter.04' name='alpha' lower='0.0' upper='0.0' value='12' dimension='1' minordimension='1' estimate='true'/>
+        <parameter id='RealParameter.05' name='beta' lower='0.0' upper='0.0' value='2.' dimension='1' minordimension='1' estimate='true'/>
+    </input>
+
+</distribution>
+
+<operator id='mutationRateScaler.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@mutationRate.alignment' scaleFactor='0.5' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='1.0'/>
+
+<operator id='birthOperator.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@birthRate.alignment' scaleFactor='0.75' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='3.0'/>
+
+<input id='psi/(psi+death).alignment' spec='beast.math.statistic.RPNcalculator' expression='samplingRate.alignment deathRate.alignment samplingRate.alignment + /'>
+    <parameter idref='deathRate.alignment'/>
+
+    <parameter idref='samplingRate.alignment'/>
+
+</input>
+
+<operator id='deathOperator.alignment' spec='beast.evolution.operators.ScaleOperator' parameter='@deathRate.alignment' scaleFactor='0.75' scaleAll='false' scaleAllIndependently='false' degreesOfFreedom='1' rootOnly='false' optimise='true' weight='3.0'/>
+
+
+
+-->
+
+</beast>

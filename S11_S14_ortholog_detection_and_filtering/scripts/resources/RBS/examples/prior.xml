@@ -1,0 +1,61 @@
+<beast version='2.0'
+       namespace=' beast.math.distributions:beast.core.parameter:beast.evolution.alignment:beast.core:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood'>
+
+
+
+    <substModel spec='RB' id='RB'>
+        <count spec='IntegerParameter' id='count' value='0' lower='0' upper='5'/>
+<!--
+        <rates spec='RealParameter' id='rates' value='1' dimension='5' lower='0.01' upper='1000.0'/>
+-->
+        <rates spec='RealParameter' id='rates' value='1' dimension='5' lower='0.0'/>
+        <frequencies id='freqs' spec='Frequencies'>
+            <frequencies spec='RealParameter' value='0.25' dimension='4'/>
+        </frequencies>
+    </substModel>
+
+
+    <run spec="MCMC" id="mcmc" chainLength="100000000">
+        <state storeEvery='100000'>
+            <stateNode idref="count"/>
+            <stateNode idref="rates"/>
+        </state>
+
+    	<distribution spec='CompoundDistribution' id='prior'>
+            <distribution spec='beast.math.distributions.RBPrior' count='@count' x='@rates'>
+<!--
+                <distr spec="beast.math.distributions.OneOnX"/>
+                <distr spec="beast.math.distributions.Gamma" alpha='0.0625' beta='16.0'/>
+                <distr spec="beast.math.distributions.Gamma" alpha='1' beta='1.0'/>
+                <distr spec="beast.math.distributions.Gamma" alpha='0.2' beta='0.2'/>
+-->
+                <distr spec="beast.math.distributions.Gamma" alpha='0.5' beta='2'/>
+            </distribution>
+
+<!--
+	        <distribution spec='beast.math.distributions.Prior' x='@count'>
+				<distr spec='beast.math.distributions.Exponential' mean='2'/>
+		    </distribution>
+-->
+    	</distribution>
+
+        <operator id='RBOperator' spec='RBOperator' weight="1" rates="@rates" count='@count'/>
+<!--
+        <operator id='rateScaler' spec='RBScaleOperator' scaleFactor="0.5" weight="1" parameter="@rates" count='@count'/>
+-->
+
+
+        <logger logEvery="1000" fileName="RB.$(seed).log" model='@prior'>
+            <log idref="prior"/>
+            <log idref='count'/>
+            <log idref='rates'/>
+        </logger>
+        <logger logEvery="100000">
+            <log idref="prior"/>
+    	    <ESS spec='ESS' name='log' arg="@prior"/>
+            <log idref='count'/>
+    	    <!--log spec='Mean' arg="@count"/-->
+        </logger>
+    </run>
+
+</beast>

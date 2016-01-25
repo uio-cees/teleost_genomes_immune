@@ -1,0 +1,87 @@
+<beast version='2.0'
+       namespace='beast.app.beauti:beast.core:beast.evolution.branchratemodel:beast.evolution.speciation:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood:beast.evolution:beast.math.distributions'>
+
+<!--
+<mergewith point='parametricDistributions'>
+-->
+<!-- Parametric distributions, all without hyperpriors -->
+
+<!-- CalibratedDistribution -->
+<!--
+        <subtemplate id='ExpGamma' class='beast.math.distributions.ExpGamma' mainid='[top]'>
+<![CDATA[
+        <distr spec="beast.math.distributions.ExpGamma">
+            <parameter name='weight' value="0" estimate='false'/>
+            <parameter name='mean' value="1" estimate='false'/>
+            <parameter name='alpha' value="0" estimate='false'/>
+            <parameter name='beta' value="1" estimate='false'/>
+		</distr>
+]]>
+        </subtemplate>
+
+</mergewith>
+-->
+
+
+
+<mergewith point='parametricDistributions'>
+<!-- Parametric distributions, all without hyperpriors -->
+
+<!-- CalibratedDistribution -->
+        <subtemplate id='FossilCalibration' class='beast.math.distributions.FossilCalibration' mainid='[top]'>
+<![CDATA[
+        <distr spec="beast.math.distributions.FossilCalibration">
+			<parameter name='minOccuranceAge' value="0.0"/>
+			<parameter name='maxOccuranceAge' value="0.0"/>
+			<minDivRate      idref="minDivRate"/>
+			<maxDivRate      idref="maxDivRate"/>
+			<minTurnoverRate idref="minTurnoverRate"/>
+			<maxTurnoverRate idref="maxTurnoverRate"/>
+			<maxSamplingRate idref="maxSamplingRate"/>
+			<minSamplingRate idref="minSamplingRate"/>
+			<parameter name='maxSamplingGap' value="0.0"/>
+			<parameter name='minSamplingGap' value="0.0"/>
+		</distr>
+]]>
+        </subtemplate>
+
+</mergewith>
+
+<mergewith point='aux-partitiontemplate'>
+<![CDATA[
+			<parameter id='minDivRate'      value="0.01"/>
+			<parameter id='maxDivRate'      value="0.01"/>
+			<parameter id='minTurnoverRate' value="0.001"/>
+			<parameter id='maxTurnoverRate' value="0.001"/>
+			<parameter id='maxSamplingRate' value="0.01"/>
+			<parameter id='minSamplingRate' value="0.01"/>
+]]>
+</mergewith>
+
+<mergewith point='aux-partitiontemplate'>
+<![CDATA[
+<!--
+        <distribution spec="beast.math.distributions.CompoundFossilPrior" id="fossilCalibrations"/>	
+-->
+
+        <distribution spec="CompoundDistribution" id="fossilCalibrations"/>	
+]]>
+         <connect srcID='fossilCalibrations'               targetID='posterior' inputName='distribution' if="isInitializing"/>
+	
+</mergewith>
+
+
+<mergewith point='aux-priors-panels'>
+
+<!--
+            path='distribution/distribution[id="prior"]/distribution[id="fossilCalibrations"]/fossilPrior'
+-->
+	<panel spec='BeautiPanelConfig' panelname="Fossil Priors" tiptext="Priors based on fossil record"
+            path='distribution/distribution[id="fossilCalibrations"]/distribution'
+            hasPartitions="none" icon='7.png.x' forceExpansion='TRUE_START_COLLAPSED'
+            type='beast.math.distributions.FossilPrior'
+        />
+
+</mergewith>
+
+</beast>

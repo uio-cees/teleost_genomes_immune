@@ -1,0 +1,132 @@
+<beast version='2.0'
+       namespace='beast.core.parameter:beast.evolution.alignment:beast.core:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood'>
+
+
+    <!-- The sequence alignment                                                  -->
+    <!-- ntax=6 nchar=768                                                        -->
+    <!-- npatterns=69                                                            -->
+    <data id="alignment" dataType="nucleotide">
+        <sequence taxon="human">
+            AGAAATATGTCTGATAAAAGAGTTACTTTGATAGAGTAAATAATAGGAGCTTAAACCCCCTTATTTCTACTAGGACTATGAGAATCGAACCCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTATACCCTTCCCGTACTAAGAAATTTAGGTTAAATACAGACCAAGAGCCTTCAAAGCCCTCAGTAAGTTG-CAATACTTAATTTCTGTAAGGACTGCAAAACCCCACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGACCAATGGGACTTAAACCCACAAACACTTAGTTAACAGCTAAGCACCCTAATCAAC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTCGAATTTGCAATTCAATATGAAAA-TCACCTCGGAGCTTGGTAAAAAGAGGCCTAACCCCTGTCTTTAGATTTACAGTCCAATGCTTCA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCCAAAGCTGGTTTCAAGCCAACCCCATGGCCTCCATGACTTTTTCAAAAGGTATTAGAAAAACCATTTCATAACTTTGTCAAAGTTAAATTATAGGCT-AAATCCTATATATCTTA-CACTGTAAAGCTAACTTAGCATTAACCTTTTAAGTTAAAGATTAAGAGAACCAACACCTCTTTACAGTGA
+        </sequence>
+        <sequence taxon="chimp">
+            AGAAATATGTCTGATAAAAGAATTACTTTGATAGAGTAAATAATAGGAGTTCAAATCCCCTTATTTCTACTAGGACTATAAGAATCGAACTCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTACACCCTTCCCGTACTAAGAAATTTAGGTTAAGCACAGACCAAGAGCCTTCAAAGCCCTCAGCAAGTTA-CAATACTTAATTTCTGTAAGGACTGCAAAACCCCACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATTAATGGGACTTAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAATCAAC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTCGAATTTGCAATTCAATATGAAAA-TCACCTCAGAGCTTGGTAAAAAGAGGCTTAACCCCTGTCTTTAGATTTACAGTCCAATGCTTCA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCTAAAGCTGGTTTCAAGCCAACCCCATGACCTCCATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAAGTTAAATTACAGGTT-AACCCCCGTATATCTTA-CACTGTAAAGCTAACCTAGCATTAACCTTTTAAGTTAAAGATTAAGAGGACCGACACCTCTTTACAGTGA
+        </sequence>
+        <sequence taxon="bonobo">
+            AGAAATATGTCTGATAAAAGAATTACTTTGATAGAGTAAATAATAGGAGTTTAAATCCCCTTATTTCTACTAGGACTATGAGAGTCGAACCCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTATACCCTTCCCGTACTAAGAAATTTAGGTTAAACACAGACCAAGAGCCTTCAAAGCTCTCAGTAAGTTA-CAATACTTAATTTCTGTAAGGACTGCAAAACCCCACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATTAATGGGACTTAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAATCAGC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTTGAATTTGCAATTCAATATGAAAA-TCACCTCAGAGCTTGGTAAAAAGAGGCTTAACCCCTGTCTTTAGATTTACAGTCCAATGCTTCA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCTAAAGCTGGTTTCAAGCCAACCCCATGACCCCCATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAAGTTAAATTACAGGTT-AAACCCCGTATATCTTA-CACTGTAAAGCTAACCTAGCATTAACCTTTTAAGTTAAAGATTAAGAGGACCAACACCTCTTTACAGTGA
+        </sequence>
+        <sequence taxon="gorilla">
+            AGAAATATGTCTGATAAAAGAGTTACTTTGATAGAGTAAATAATAGAGGTTTAAACCCCCTTATTTCTACTAGGACTATGAGAATTGAACCCATCCCTGAGAATCCAAAATTCTCCGTGCCACCTGTCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTCACATCCTTCCCGTACTAAGAAATTTAGGTTAAACATAGACCAAGAGCCTTCAAAGCCCTTAGTAAGTTA-CAACACTTAATTTCTGTAAGGACTGCAAAACCCTACTCTGCATCAACTGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATCAATGGGACTCAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAGTCAAC-TGGCTTCAATCTAAAGCCCCGGCAGG-TTTGAAGCTGCTTCTTCGAATTTGCAATTCAATATGAAAT-TCACCTCGGAGCTTGGTAAAAAGAGGCCCAGCCTCTGTCTTTAGATTTACAGTCCAATGCCTTA-CTCAGCCATTTTACCACAAAAAAGGAAGGAATCGAACCCCCCAAAGCTGGTTTCAAGCCAACCCCATGACCTTCATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAGGTTAAATTACGGGTT-AAACCCCGTATATCTTA-CACTGTAAAGCTAACCTAGCGTTAACCTTTTAAGTTAAAGATTAAGAGTATCGGCACCTCTTTGCAGTGA
+        </sequence>
+        <sequence taxon="orangutan">
+            AGAAATATGTCTGACAAAAGAGTTACTTTGATAGAGTAAAAAATAGAGGTCTAAATCCCCTTATTTCTACTAGGACTATGGGAATTGAACCCACCCCTGAGAATCCAAAATTCTCCGTGCCACCCATCACACCCCATCCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTACACCCTTCCCGTACTAAGAAATTTAGGTTA--CACAGACCAAGAGCCTTCAAAGCCCTCAGCAAGTCA-CAGCACTTAATTTCTGTAAGGACTGCAAAACCCCACTTTGCATCAACTGAGCGCAAATCAGCCACTTTAATTAAGCTAAGCCCTCCTAGACCGATGGGACTTAAACCCACAAACATTTAGTTAACAGCTAAACACCCTAGTCAAT-TGGCTTCAGTCCAAAGCCCCGGCAGGCCTTAAAGCTGCTCCTTCGAATTTGCAATTCAACATGACAA-TCACCTCAGGGCTTGGTAAAAAGAGGTCTGACCCCTGTTCTTAGATTTACAGCCTAATGCCTTAACTCGGCCATTTTACCGCAAAAAAGGAAGGAATCGAACCTCCTAAAGCTGGTTTCAAGCCAACCCCATAACCCCCATGACTTTTTCAAAAGGTACTAGAAAAACCATTTCGTAACTTTGTCAAAGTTAAATTACAGGTC-AGACCCTGTGTATCTTA-CATTGCAAAGCTAACCTAGCATTAACCTTTTAAGTTAAAGACTAAGAGAACCAGCCTCTCTTTGCAATGA
+        </sequence>
+        <sequence taxon="siamang">
+            AGAAATACGTCTGACGAAAGAGTTACTTTGATAGAGTAAATAACAGGGGTTTAAATCCCCTTATTTCTACTAGAACCATAGGAGTCGAACCCATCCTTGAGAATCCAAAACTCTCCGTGCCACCCGTCGCACCCTGTTCTAAGTAAGGTCAGCTAAATAAGCTATCGGGCCCATACCCCGAAAATGTTGGTTATACCCTTCCCATACTAAGAAATTTAGGTTAAACACAGACCAAGAGCCTTCAAAGCCCTCAGTAAGTTAACAAAACTTAATTTCTGCAAGGGCTGCAAAACCCTACTTTGCATCAACCGAACGCAAATCAGCCACTTTAATTAAGCTAAGCCCTTCTAGATCGATGGGACTTAAACCCATAAAAATTTAGTTAACAGCTAAACACCCTAAACAACCTGGCTTCAATCTAAAGCCCCGGCAGA-GTTGAAGCTGCTTCTTTGAACTTGCAATTCAACGTGAAAAATCACTTCGGAGCTTGGCAAAAAGAGGTTTCACCTCTGTCCTTAGATTTACAGTCTAATGCTTTA-CTCAGCCACTTTACCACAAAAAAGGAAGGAATCGAACCCTCTAAAACCGGTTTCAAGCCAGCCCCATAACCTTTATGACTTTTTCAAAAGATATTAGAAAAACTATTTCATAACTTTGTCAAAGTTAAATCACAGGTCCAAACCCCGTATATCTTATCACTGTAGAGCTAGACCAGCATTAACCTTTTAAGTTAAAGACTAAGAGAACTACCGCCTCTTTACAGTGA
+        </sequence>
+    </data>
+
+    <substModel spec='RB' id='RB'> <!-- eigenSystem="beast.evolution.substitutionmodel.RobustEigenSystem"-->
+        <count spec='IntegerParameter' id='count' value='1' lower='0' upper='5'/>
+        <rates spec='RealParameter' id='rates' value='0.030259933' dimension='5' lower='0.01' upper='100.0'/>
+        <frequencies id='freqs' spec='Frequencies'>
+            <data idref='alignment'/>
+        </frequencies>
+
+<!--
+        <frequencies id='freqs' spec='Frequencies'>
+            <frequencies spec='RealParameter' value='0.25' dimension='4'/>
+        </frequencies>
+-->
+    </substModel>
+
+
+    <distribution id='RBprior' spec='beast.math.distributions.RBPrior' count='@count' x='@rates'>
+                <distr spec="beast.math.distributions.Gamma" alpha='0.2' beta='5.0'/>
+<!--
+        <distr spec="beast.math.distributions.Gamma" alpha='0.05' beta='20.0'/>
+        <distr spec="beast.math.distributions.Uniform" lower='0.01' upper='100'/>
+-->
+    </distribution>
+
+
+    <distribution id="posterior" spec="util.CompoundDistribution" useThreads="false">
+        <distribution id="prior" spec="util.CompoundDistribution" useThreads="false">
+            <distribution idref="RBprior"/>
+            <distribution id="CoalescentConstant" spec="Coalescent">
+                <populationModel id="ConstantPopulation" spec="ConstantPopulation">
+                    <popSize spec='RealParameter' dimension="1" estimate="true" id="popSize" value="0.3"/>
+                </populationModel>
+                <treeIntervals id="TreeIntervals" spec="TreeIntervals">
+                     <tree estimate="true" id="Tree">
+                        <taxonset id="TaxonSet" spec="TaxonSet">
+                            <data idref="alignment" name="alignment"/>
+                        </taxonset>
+                    </tree>
+                </treeIntervals>
+            </distribution>
+            <distribution id="PopSizePrior" spec="beast.math.distributions.Prior" x="@popSize">
+                <distr id="OneOnX.0" offset="0.0" spec="beast.math.distributions.OneOnX"/>
+            </distribution>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="false">
+            <distribution data="@alignment" id="treeLikelihood" spec="TreeLikelihood" tree="@Tree" useAmbiguities="false">
+                <siteModel gammaCategoryCount="0" id="SiteModel" spec="SiteModel">
+                    <parameter dimension="1" estimate="false" id="mutationRate" minordimension="1" name="mutationRate" value="1.0"/>
+                    <parameter dimension="1" estimate="false" id="gammaShape" minordimension="1" name="shape" value="1.0"/>
+                    <parameter dimension="1" estimate="false" id="proportionInvariant" minordimension="1" name="proportionInvariant" value="0.0"/>
+                    <substModel idref='RB'/>
+                </siteModel>
+                <branchRateModel id="StrictClock" spec="beast.evolution.branchratemodel.StrictClockModel">
+                    <parameter dimension="1" estimate="false" id="clockRate" minordimension="1" name="clock.rate" value="1.0"/>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+
+
+    <run spec="MCMC" id="mcmc" chainLength="10000000">
+        <distribution idref='posterior'/>
+<!--
+        <operator id='shapeScaler' spec='ScaleOperator' scaleFactor="0.5" weight="1" parameter="@shape"/>
+        <operator id='invarScaler' spec='ScaleOperator' scaleFactor="0.5" weight="1" parameter="@propInvar"/>
+-->
+
+        <operator id='RBOperator' spec='RBOperator' weight="1" rates="@rates" count='@count'/>
+        <operator id='rateScaler' spec='RBScaleOperator' scaleFactor="0.5" weight="1" parameter="@rates" count='@count'/>
+
+        <operator id="PopSizeScaler" parameter="@popSize" scaleFactor="0.75" spec="ScaleOperator" weight="3.0"/>
+
+        <operator id='treeScaler' spec='ScaleOperator' scaleFactor="0.5" weight="1" tree="@Tree"/>
+        <operator spec='Uniform' weight="10" tree="@Tree"/>
+        <operator spec='SubtreeSlide' weight="5" gaussian="true" size="1.0" tree="@Tree"/>
+        <operator id='narrow' spec='Exchange' isNarrow='true' weight="1" tree="@Tree"/>
+        <operator id='wide' spec='Exchange' isNarrow='false' weight="1" tree="@Tree"/>
+        <operator spec='WilsonBalding' weight="1" tree="@Tree"/>
+
+        <logger logEvery="10000" fileName="test.$(seed).log">
+	        <model idref='likelihood'/>
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="CoalescentConstant"/>
+            <log idref="RBprior"/>
+            <log idref='count'/>
+            <log idref='rates'/>
+            <log spec='beast.evolution.tree.TreeHeightLogger' tree='@Tree'/>
+            <log idref='popSize'/>
+        </logger>
+
+        <logger logEvery="10000" fileName="test.$(seed).trees">
+            <log idref="Tree"/>
+        </logger>
+
+        <logger logEvery="10000">
+	        <model idref='likelihood'/>
+            <log idref="likelihood"/>
+    	    <ESS spec='ESS' name='log' arg="@likelihood"/>
+            <log idref='count'/>
+        </logger>
+    </run>
+
+</beast>

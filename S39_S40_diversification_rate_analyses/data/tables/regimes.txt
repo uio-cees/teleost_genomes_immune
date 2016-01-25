@@ -1,0 +1,10 @@
+clade	node	regime_number
+Background	27	1
+Percomorphaceae_excluding_Ophidiiformes	46	2
+Berycoidei	16	3
+Myctophiformes	5	4
+Paracanthomorphacea	33	5
+Polymixiiformes+Percopsiformes	34	6
+Gadiformes_including_Bregmacerotidae	37	7
+Gadiformes_without_Bregmacerotidae	38	8
+Southern_Gadiformes	11	9

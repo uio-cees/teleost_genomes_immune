@@ -1,0 +1,3 @@
+<addon name='CA' version='1.0.4'>
+	<depends on='beast2' atleast='2.2.0'/>
+</addon>

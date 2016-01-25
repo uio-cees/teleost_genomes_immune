@@ -1,0 +1,32 @@
+Notes:
+Files in this directory demonstrate scripts and data used to identify a set of 2251 candidate exon markers to be used for phylogenomic analysis, as described in Supplementary Notes S10-S11.
+Several files were removed from the data directory subsequent to the analysis due to space restrictions. These files are here replaced with a file with compressed information called "genes.dmp". In order to run the complete pipeline, please remove "genes.dmp", and place the files listed below in the data directory instead.
+
+Software required:
+bash (tested with GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin14))
+ruby (tested with ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin14])
+tblastn (tested with tblastn 2.2.26+)
+
+
+Input files in data directory:
+exons_from_biomart.txt - list of exon, transcript and gene ids for Danio rerio, obtained from http://www.ensembl.org/biomart on 04/12/14
+Compara.78.protein.nhx.emf - ENSEMBL gene trees, obtained from http://www.ensembl.org/biomart on 04/12/14
+
+
+Further input files required in data directory, but removed due to space restriction:
+Danrer.fasta - Originally downloaded from ENSEMBL v.78 as Danio_rerio.Zv9.dna.toplevel.fa
+Astmex.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Astyanax_mexicanus.AstMex102.cdna.all.fa
+Danrer.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Danio_rerio.Zv9.cdna.all.fa
+Gadmor.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Gadus_morhua.gadMor1.cdna.all.fa
+Gasacu.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Gasterosteus_aculeatus.BROADS1.cdna.all.fa
+Orenil.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Oreochromis_niloticus.Orenil1.0.cdna.all.fa
+Orylat.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Oryzias_latipes.MEDAKA1.cdna.all.fa
+Poefor.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Poecilia_formosa.PoeFor_5.1.2.cdna.all.fa
+Takrub.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Takifugu_rubripes.FUGU4.cdna.all.fa
+Tetnig.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Tetraodon_nigroviridis.TETRAODON8.cdna.all.fa
+Xipmac.cdna.fasta - Originally downloaded from ENSEMBL v.78 as Xiphophorus_maculatus.Xipmac4.4.2.cdna.all.fa
+
+
+Executing this pipeline:
+cd [PATH]/S10_S11_markers_for_phylogenetic_reconstruction/scripts
+bash start.sh
