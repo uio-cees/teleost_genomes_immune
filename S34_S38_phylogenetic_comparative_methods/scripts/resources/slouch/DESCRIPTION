@@ -1,0 +1,30 @@
+Package: slouch
+Type: Package
+Title: Stochastic Linear Ornstein Uhlenbeck models for Comparative Hypotheses
+Version: 1.2
+Date: 2011-12-28
+Author: Jason Pienaar
+Maintainer: Jason Pienaar <jasonpienaar@gmail.com>
+Depends: R (>= 2.7.2)
+Suggests: ape, ouch
+Description: slouch provides functions for fitting macro evolutionary
+models of trait evolution on a phylogeny as well as useful tree
+plotting, parsimony reconstruction, iterated GLS regression 
+functions for incorporating observation error of continuous 
+variables, and bias correction functions for when predictor 
+variable error biases regression slopes Macro evolutionary trait 
+optima can be modeled as a single global optimum for all species, 
+as a function of different fixed categorically encoded niches that 
+can change over time for groups of species, as a multiple or 
+single predictor regression on fixed, continuously encoded 
+measures of other traits or the external environment,  as a 
+multiple or single predictor regression on randomly evolving 
+continuous measures of the external environment, or as any 
+combination of the preceding models Observation error for any 
+continuously measured variable, as well as more complex 
+interactions between observation errors, such as covariances 
+between response and predictor observation errors can be included 
+in the model fitting functions
+License: GPL (Version 2 or later)
+LazyLoad: true
+Packaged: Tue Jan  3 01:56:17 2012; administrator
