@@ -1,4 +1,4 @@
-This folder contains all scripts and data needed to re-construct the estimation of MHC gene copy numbers in the 66 teleost species reported in the manuscript "Evolution of the immune system influences speciation rates in teleost fishes" (reference number 2016-01-00669, submitted to Nature.
+This folder contains all scripts and data needed to re-construct the estimation of MHC gene copy numbers as described in Supplementary Notes 22-28.
 
 For a short video on how to proceed, see https://screencast.uninett.no/relay/ansatt/larssnnmbu.no/2016/25.01/385867/Teleost_copy_number_-_20160125_130342_39/index.html
 
