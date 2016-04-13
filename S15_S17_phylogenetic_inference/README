@@ -1,0 +1,18 @@
+Notes:
+Files in this directory demonstrate scripts and data used for phylogenomic inference of teleost fishes, as described in Supplementary Notes S15-S17.
+
+Software required:
+bash (tested with GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin14))
+ruby (tested with ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin14])
+rscript (tested with R scripting front-end version 3.1.2 (2014-10-31))
+python3 (tested with Python 3.4.0)
+java (tested with java version "1.8.0_31")
+
+Input files in data directory:
+constraints/root_constraints.xml - set of topological constraints for BEAST analyses
+constraints/fossil_constraints.xml - set of topological and divergence time constraints for BEAST analyses
+nuclear/*.nex - alignment files produced as part of the S11_S14_ortholog_identification pipeline
+
+Executing this pipeline:
+cd [PATH]/S15_S17_phylogenetic_inference/scripts
+bash start.sh
