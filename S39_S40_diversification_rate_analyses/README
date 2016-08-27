@@ -13,7 +13,6 @@ Input files in data directory:
 outfiles/*.txt - input and output file of the SLOUCH analysis with the best-fitting model combination, produced as part of the S34_S38_phylogenetic_comparative_methods pipeline (these files are here required to generate input for analyses of the association between MHC I copy numbers and speciation)
 tables/clades.txt - species richness for all phylogenetic clades used in our analysis (see file header for more information)
 tables/order.txt - list specifying the order in which species will be plotted
-trees/76g_nucl_conc_fossils.combined.tre - fossil-calibrated phylogenetic tree produced as part of the S15_S17_phylogenetic_inference pipeline
 tables/regimes.txt - specification of node numbers for phylogenetic clades associated with shifts in the MHC I copy number optimum, as determined with the S34_S38_phylogenetic_comparative_methods pipeline
 tables/species.txt - list translating species ids and names
 templates/divcontrol.txt - input template for BAMM analyses
